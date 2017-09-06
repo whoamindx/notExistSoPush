@@ -18,7 +18,7 @@ console.log(ARR);
 ### ES5
 ```javascript
 var notExistSoPush = function(arr,v){
-	if(!arr.some((e) => e == v )) arr.push(v)
+	if(!arr.some(function(e){ return e == v })) arr.push(v)
 };
 ```
 ### ES6 + ES7
